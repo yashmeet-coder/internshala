@@ -12,7 +12,7 @@ const Details = ({ id }) => {
   const date = new Date();
   console.log("invoked");
   useEffect(() => {
-    fetch("http://localhost:5000/" + new URLSearchParams({
+    fetch("https://internshala-4.onrender.com/" + new URLSearchParams({
       id: id
     }))
       .then((res) => {
