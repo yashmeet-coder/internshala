@@ -3,7 +3,8 @@ const express = require("express")
 const cors = require('cors')
 const app = express();
 const mongoose = require("mongoose")
-mongoose.connect(process.env.DB_URL);
+const db_url = "mongodb+srv://yoyashmeet:"+process.env.PASSWORD+"@cluster0.gpngvfu.mongodb.net/Internships?retryWrites=true&w=majority"
+mongoose.connect(url);
 app.use(cors());
 app.use(express.json());
 
