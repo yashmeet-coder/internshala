@@ -19,7 +19,7 @@ const Sidebar = () => {
   const marks = [1, 2, 3, 4, 5, 6, 7]
 
   useEffect(() => {
-    fetch("http://localhost:5000/")
+    fetch("https://internshala-4.onrender.com/")
       .then((res) => {
         return res.json()
       })
